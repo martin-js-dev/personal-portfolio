@@ -350,3 +350,245 @@ nav ul li a:hover{
   margin-right: 5rem;
   color:#333;
 }
+
+
+
+/* <!--===================  SERVICES ================--> */
+
+.wrapper-services {
+  padding-bottom: 3rem;
+  margin-top: 10rem;
+  margin-bottom: 7rem;
+  background-color: #f2f2f2;
+  
+  
+  
+}
+
+.wrapper-services h2 {
+  color:var(--secoundaryColor);
+  text-align: center;
+  font-size: 2rem;
+  padding-bottom: 2rem;
+}
+.wrapper-services h1{
+  text-align: center;
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+}
+
+.skills {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  
+}
+
+.skill {
+  margin:0.5rem 2rem;
+  border-top-right-radius: 20px;
+  width: 30%;
+  height: 17rem;
+  padding: 2rem;
+  transition: 0.2s ease-in-out;
+  text-align: center;
+  
+}
+
+.skill:hover{
+  cursor: pointer;
+  border:2px solid var(--accentColor);
+  transform: scale(1.1);
+  
+  
+  
+}
+
+.skill h3{
+  margin-top: 1rem;
+  font-size: 1.6rem;
+  color:var(--primaryColor);
+  font-weight: bold;
+  
+}
+
+.skill i{
+font-size: 2.5rem;
+background-color: var(--primaryColor);
+padding: 1rem;
+color:#fff;
+
+
+}
+
+.skill p {
+  text-align: left;
+  margin-top: 0.5rem;
+}
+/*===============TIMELINE=====================*/
+
+
+.intro {
+  
+  padding-bottom: 3rem;
+}
+
+.container3 {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.container3 h2 {
+  color:var(--secoundaryColor);
+  text-align: center;
+  font-size: 2rem;
+  padding-bottom: 2rem;
+  
+}
+
+.timeline{
+  padding-bottom: 25rem;
+}
+
+.timeline h2 {
+  color:#fff;
+  text-transform: uppercase;
+}
+
+.timeline p{
+  color:#fff;
+}
+.timeline ul {
+ 
+  padding: 20px 0;
+}
+
+.timeline ul li {
+  list-style-type: none;
+  position: relative;
+  width: 7px;
+  margin: 0 auto;
+  padding-top:15px;
+  background:rgb(189, 187, 187);
+  margin-top: -2rem;
+  
+  
+}
+
+.time-1::after, .time-2::after, .time-3::after, .time-4::after {
+  margin-top: 3rem;
+  content: " 2012 ";
+  color:#f2f2f2;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 120px;
+  height: 80px;
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  display: flex;
+  justify-content: center;
+  vertical-align: middle;
+  font-size: 2rem;
+  padding-top: 3rem;
+
+  
+}
+
+.time-2::after{
+  content:" 2014";
+}
+.time-3::after{
+  content:" 2015";
+}
+.time-4::after{
+  content:" 2018";
+}
+
+
+.timeline ul li div {
+  position: relative;
+  width: 600px;
+  padding: 30px;
+  background-color: #364585;
+  color:#fff;
+  
+}
+
+.timeline ul li div::before {
+  content: '';
+  position: absolute;
+  bottom: 7px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+
+.timeline ul li:nth-child(odd) div {
+  left: 45px;
+}
+
+.timeline ul li:nth-child(odd) div::before {
+  left: -24px;
+  bottom:15px;
+  border-width: 25px 26px 25px 0;
+  border-color: transparent #364585 transparent transparent;
+}
+
+.timeline ul li:nth-child(even) div {
+  left: -439px;
+}
+
+.timeline ul li:nth-child(even) div::before {
+  right: -25px;
+  bottom: 15px;
+  border-width: 25px 0 25px 26px;
+  border-color: transparent transparent transparent #364585;;;
+}
+
+.timeline i {
+  font-size: 2.5rem;
+}
+time {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+
+/* EFFECTS
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.timeline ul li::after {
+  transition: background 1s ease-in-out;
+}
+
+.timeline ul li.in-view::after {
+  background-color:#6570a1;
+ 
+}
+
+.timeline ul li div {
+  visibility: hidden;
+  opacity: 0;
+  transition: all 1s ease-in-out;
+}
+
+.timeline ul li:nth-child(odd) div {
+  transform: translate3d(200px, 0, 0);
+}
+
+.timeline ul li:nth-child(even) div {
+  transform: translate3d(-200px, 0, 0);
+}
+
+.timeline ul li.in-view div {
+  transform: none;
+  visibility: visible;
+  opacity: 1;
+}
+
+

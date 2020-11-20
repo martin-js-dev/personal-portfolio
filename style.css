@@ -592,3 +592,92 @@ time {
 }
 
 
+
+
+
+/* <!--=================== PORTFOLIO================--> */
+
+
+.portfolio {
+  padding-top: 2rem;
+  padding-bottom: 5rem;
+  margin-top: -15rem;
+  background-color: #f2f2f2;
+}
+
+
+
+.portfolio h2 {
+  color:var(--secoundaryColor);
+  text-align: center;
+  font-size: 2rem;
+  padding-bottom: 4rem;
+}
+
+.gallery {
+  display: grid;
+  max-width: 80%;
+  margin: 0 auto;
+  grid-gap: 3rem;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-auto-rows: minmax(150px, auto);
+}
+
+.gallery-item {
+  width: 100%;
+  border-radius: 5px;
+  transition: all .3s;
+  
+  
+}
+
+.gallery-item img {
+  width: 100%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+
+.view {
+  background-color: #fff;
+  padding: 2rem;
+  cursor: pointer;
+  
+  
+}
+
+.view:hover{
+  transform: scale(1.1);
+}
+
+.white-text{
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-top: 1rem ;
+  color:var(--primaryColor);
+}
+
+.button-p{
+  width: 50%;
+  height: 3.5rem;
+  margin: 0.5rem;
+  border: none;
+  transition: 0.2s ease-in-out;
+  border:2px solid  var(--primaryColor);
+  background-color: #fff;
+  cursor: pointer;
+  
+}
+
+.button-p a {
+  color:var(--primaryColor);
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+
+
+.button-p:hover{
+  
+  scale:1.1;
+  
+}
